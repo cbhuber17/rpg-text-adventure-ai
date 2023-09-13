@@ -1,23 +1,13 @@
 {
-  "name": "rpg-text-adventure-ai",
-  "version": "1.0.0",
-  "description": "RPG text adventure using AI",
+  "name": "convex-text-adventure",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cbhuber17/rpg-text-adventure-ai.git"
-  },
-  "author": "Colin Huber",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cbhuber17/rpg-text-adventure-ai/issues"
-  },
-  "homepage": "https://github.com/cbhuber17/rpg-text-adventure-ai#readme",
   "dependencies": {
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
