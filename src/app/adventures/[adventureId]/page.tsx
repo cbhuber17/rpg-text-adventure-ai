@@ -151,7 +151,7 @@ export default function Adventure(props: {
                         <img
                           className="rounded-xl border-gray-500 border"
                           src={
-                            items.find((item) => item.itemName === itemName)
+                            items!.find((item) => item.itemName === itemName)
                               ?.imageUrl
                           }
                         />
