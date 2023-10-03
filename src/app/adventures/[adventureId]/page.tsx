@@ -44,9 +44,9 @@ export default function Adventure(props: {
   const lastEntry = entries && entries[entries.length - 1];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 font-chakra">
+    <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 md:p-10 sm:p-2 font-chakra">
       <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 lg:gap-8 md:grid-rows-2 md:gap-4">
           <div className="flex flex-col gap-2">
             <div className="text-white rounded-xl h-[450px] mb-2 p-2 overflow-y-auto">
               {entries?.map((entry, idx) => {
@@ -72,7 +72,7 @@ export default function Adventure(props: {
               })}
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 mx-auto pb-5">
               <Dice
                 size={40}
                 onRoll={(value) => setMessage(value.toString())}
