@@ -3,7 +3,7 @@ import { internalAction, internalQuery, mutation } from "./_generated/server";
 import OpenAI from "openai";
 import { api, internal } from "./_generated/api";
 
-const openai = new OpenAI();
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export const createAdventure = mutation({
   args: {
